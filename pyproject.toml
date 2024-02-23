@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "deeplogic-internship"
+version = "0.1.0"
+description = ""
+authors = ["nidhi-2619 <91557785+nidhi-2619@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
