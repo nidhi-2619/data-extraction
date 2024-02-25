@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+ {% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Extraction from the File</title>
+  <link rel="stylesheet" href="{% static 'output.css' %}">
+</head>
+<body>
+<h1 class="font-extrabold text-6xl flex justify-center m-2 p-2">Welcome to Data Extraction</h1>
+<h2 class="font-mono text-2xl mx-60 p-2 text-slate-400">Extract Your Data From Any PDF or Image File to csv file.</h2>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label class="text-2xl ml-80">File
+    {{ form.file }}
+    </label>
+    <button type="submit" class="block bg-green-600 rounded-md text-slate-50 font-bold hover:bg-green-400 py-2 px-6 ml-96 my-4"> Download ⇩ </button>
+  </form>
+</body>
+</html>
