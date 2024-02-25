@@ -20,9 +20,11 @@ Before running the application, make sure to have installed the following:
 
 ## Installation
 
+#### Clone the repository to your local machine
 ```bash
-git clone
+git clone https://github.com/nidhi-2619/data-extraction.git
 ```
+#### Install the dependencies using poetry and npm
 
 ```bash
 poetry install
